@@ -17,22 +17,22 @@ En macOS con arquitectura Intel o Apple Silicon (M1/M2/M3)
 
 Ejecuta en la terminal:
 
-    ```sh
+    
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" 
-    ```
+    
 
 Instalar zbar
 
-    ```sh
+    
     brew install zbar
-    ```
+    
 
 Agregar zbar al PATH de Python
 
-    ```sh
+    
     export DYLD_FALLBACK_LIBRARY_PATH=$(brew --prefix zbar)/lib:$DYLD_FALLBACK_LIBRARY_PATH
     export PATH="/opt/homebrew/bin:$PATH"
-    ```
+    
 
 ## Instalación
 
